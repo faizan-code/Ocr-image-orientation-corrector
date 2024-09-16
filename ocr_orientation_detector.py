@@ -1,8 +1,7 @@
 """"
 Code : Faizan 
-Eid : 80271
 
-Req
+mian Req
 Python 3.9
 pytesseract         0.3.13
 imutils             0.5.4
@@ -152,14 +151,3 @@ def process_image(image_path, tessarct_output_directory, final_output_directory)
     }
 
     return final_image_path, result_json
-
-if __name__ == "__main__":
-    image_path = '/home/faizan/2024/adhar_marking_orientaion_class/adhar_marking/test_final_data/1_90.png'  # Input image path
-    tessarct_output_directory = '/home/faizan/2024/adhar_marking_orientaion_class/adhar_marking/test_final_data/aws_output'  # Folder to save Tesseract-corrected images
-    final_output_directory = '/home/faizan/2024/adhar_marking_orientaion_class/adhar_marking/test_final_data/tessarct_output'  # Folder to save AWS-rotated images
-    
-    final_image, result = process_image(image_path, tessarct_output_directory, final_output_directory)
-
-    if final_image and result:
-        print(f"Final rotated image: {final_image}")
-        print("Result JSON:", result)
