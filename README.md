@@ -14,7 +14,7 @@ This project is designed to automatically detect and correct the orientation of 
 
 ## Installation
 
-Ensure you have Python 3.8.18 installed. Install the required dependencies using the following command:
+Ensure you have Python 3.9 installed. Install the required dependencies using the following command:
 
 ```bash
 pip install -r requirements.txt
